@@ -1,0 +1,50 @@
+Time 1
+Waiting clients: 
+Cash register 1: empty
+Cash register 2: empty
+Cash register 3: empty
+Time 2
+Waiting clients: 
+Cash register 1: empty
+Cash register 2: empty
+Cash register 3: empty
+Time 3
+Waiting clients: 
+Cash register 1: empty
+Cash register 2: empty
+Cash register 3: empty
+Time 4
+Waiting clients: 
+Cash register 1: empty
+Cash register 2: empty
+Cash register 3: empty
+Time 5
+Waiting clients: 
+Cash register 1: empty
+Cash register 2: empty
+Cash register 3: empty
+Time 6
+Waiting clients: 
+Cash register 1: (16, 6, 2)
+Cash register 2: empty
+Cash register 3: empty
+Time 7
+Waiting clients: (5, 7, 2), (18, 7, 2), (20, 7, 2), 
+Cash register 1: (16, 6, 1)
+Cash register 2: (3, 7, 2)
+Cash register 3: (4, 7, 2)
+Time 8
+Waiting clients: (1, 8, 2), (8, 8, 2), (13, 8, 2), (18, 7, 2), (2, 8, 2), (10, 8, 2), (15, 8, 2), (20, 7, 2), (6, 8, 2), (12, 8, 2), (17, 8, 2), 
+Cash register 1: (5, 7, 2)
+Cash register 2: (3, 7, 1)
+Cash register 3: (4, 7, 1)
+Time 9
+Waiting clients: (1, 8, 2), (8, 8, 2), (13, 8, 2), (7, 9, 2), (14, 9, 2), (2, 8, 2), (10, 8, 2), (15, 8, 2), (9, 9, 2), (19, 9, 2), (6, 8, 2), (12, 8, 2), (17, 8, 2), (11, 9, 2), 
+Cash register 1: (5, 7, 1)
+Cash register 2: (18, 7, 2)
+Cash register 3: (20, 7, 2)
+Time 10
+Waiting clients: (8, 8, 2), (13, 8, 2), (7, 9, 2), (14, 9, 2), (2, 8, 2), (10, 8, 2), (15, 8, 2), (9, 9, 2), (19, 9, 2), (6, 8, 2), (12, 8, 2), (17, 8, 2), (11, 9, 2), 
+Cash register 1: (1, 8, 2)
+Cash register 2: (18, 7, 1)
+Cash register 3: (20, 7, 1)
