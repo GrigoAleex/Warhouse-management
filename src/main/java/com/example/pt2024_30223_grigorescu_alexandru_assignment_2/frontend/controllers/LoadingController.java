@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ProgressBar;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.CompletableFuture;
 
 
 public class LoadingController {
@@ -18,6 +19,8 @@ public class LoadingController {
     private ProgressBar progress_bar;
 
     public void initialize() {
+        CompletableFuture.runAsync(Simulation::start);
+
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             Double counter;
@@ -31,11 +34,6 @@ public class LoadingController {
                 if (counter >= 1.0) {
                     System.out.println("Timer finished.");
                     timer.cancel();
-                    Platform.runLater(new Runnable() {
-                        @Override public void run() {
-                            Router.go("logs");
-                        }
-                    });
 
                 }
             }

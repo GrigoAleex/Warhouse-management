@@ -16,7 +16,7 @@ public class Window {
 
     public Window(Stage stage) {
         stage.setTitle("Marketplace Simulator x2000");
-        stage.setWidth(850);
+        stage.setWidth(800);
         stage.setHeight(600);
         stage.getIcons().add(new Image("woman.png"));
         stage.show();

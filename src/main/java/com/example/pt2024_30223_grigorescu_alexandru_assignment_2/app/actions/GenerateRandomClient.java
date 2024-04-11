@@ -24,8 +24,8 @@ public class GenerateRandomClient implements GeneratesNewClients {
         for (int i = 1; i <= count; i++) {
             clients.add(new Client(
                     i,
-                    generator.handle(arrivalTimeMax, arrivalTimeMin, 2, count / 2),
-                    generator.handle(serviceTimeMax, serviceTimeMin, 2, count / 2)
+                    generator.handle(arrivalTimeMax, arrivalTimeMin, count / 2, (arrivalTimeMin + arrivalTimeMax) / 2),
+                    generator.handle(serviceTimeMax, serviceTimeMin, count / 2, (serviceTimeMin + serviceTimeMax) / 2)
             ));
             loader.incrementLoading();
         }

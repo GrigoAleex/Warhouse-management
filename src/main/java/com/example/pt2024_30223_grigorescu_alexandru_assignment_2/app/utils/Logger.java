@@ -3,6 +3,8 @@ package com.example.pt2024_30223_grigorescu_alexandru_assignment_2.app.utils;
 import com.example.pt2024_30223_grigorescu_alexandru_assignment_2.app.Models.CashRegister;
 import com.example.pt2024_30223_grigorescu_alexandru_assignment_2.app.Models.Client;
 import com.example.pt2024_30223_grigorescu_alexandru_assignment_2.app.Models.Log;
+import com.example.pt2024_30223_grigorescu_alexandru_assignment_2.routing.Router;
+import javafx.application.Platform;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -106,6 +108,11 @@ public class Logger {
 
                 writer.close();
                 System.out.println("Data written to " + filename);
+                Platform.runLater(new Runnable() {
+                    @Override public void run() {
+                        Router.go("logs");
+                    }
+                });
             } catch (IOException e) {
                 System.err.println("Error writing to " + filename);
                 e.printStackTrace();

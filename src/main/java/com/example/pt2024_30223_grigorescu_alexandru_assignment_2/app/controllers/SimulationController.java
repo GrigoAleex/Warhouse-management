@@ -20,13 +20,16 @@ public class SimulationController implements IController {
         }
         AppProvider.set(LoaderManager.class, new LoaderManager(request.getClients() + request.getQueues()));
 
-        Thread t = new Thread() {
-            public void run() {
-                Simulation.setState(request.getClients(), request.getQueues(), request.getSimulationTime(), request.getArrivalTimeMin(), request.getArrivalTimeMax(), request.getServiceTimeMin(), request.getServiceTimeMax());
-                return;
-            }
-        };
-        t.start();
+
+        Simulation.setState(
+                request.getClients(),
+                request.getQueues(),
+                request.getSimulationTime(),
+                request.getArrivalTimeMin(),
+                request.getArrivalTimeMax(),
+                request.getServiceTimeMin(),
+                request.getServiceTimeMax()
+        );
 
         Router.go("loading");
     }
