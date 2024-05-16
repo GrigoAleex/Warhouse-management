@@ -1,0 +1,5 @@
+CREATE TABLE logs (
+    id          INT AUTO_INCREMENT PRIMARY KEY,
+    action      TEXT NOT NULL,
+    created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

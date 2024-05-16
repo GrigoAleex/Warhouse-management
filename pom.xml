@@ -85,10 +85,20 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.3</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -108,7 +118,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.pt2024_30223_grigorescu_alexandru_assignment_2/com.example.pt2024_30223_grigorescu_alexandru_assignment_2.HelloApplication
+                                com.example.pt2024_30223_grigorescu_alexandru_assignment_2/com.example.pt2024_30223_grigorescu_alexandru_assignment_3.HelloApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

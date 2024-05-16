@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="982.0" prefWidth="1512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pt2024_30223_grigorescu_alexandru_assignment_3.presentation.controllers.UsersCreateController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="392.0" style="-fx-background-color: #fff;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" onMouseClicked="#goProducts" prefHeight="40.0" prefWidth="246.0" style="-fx-background-color: #CCDFF1;">
+               <VBox.margin>
+                  <Insets bottom="12.0" top="46.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/products.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Produse">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="44.0" layoutY="108.0" onMouseClicked="#goClients" prefHeight="40.0" prefWidth="246.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/clients.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clienți">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="44.0" layoutY="160.0" onMouseClicked="#goOrders" prefHeight="40.0" prefWidth="246.0" style="-fx-border-radius: 20;">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/orders.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Comenzi">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="44.0" layoutY="200.0" onMouseClicked="#goLogs" prefHeight="40.0" prefWidth="246.0" style="-fx-border-radius: 20;">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/logs.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Log-uri">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="44.0" layoutY="240.0" onMouseClicked="#goEmployees" prefHeight="40.0" prefWidth="246.0" style="-fx-border-radius: 20;">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/clients.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Angajați">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="12.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="44.0" layoutY="280.0" onMouseClicked="#goCreateOrder" prefHeight="40.0" prefWidth="246.0" style="-fx-border-radius: 2; -fx-border-color: #CCDFF1;">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../images/plus.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#005eb8" strokeType="OUTSIDE" strokeWidth="0.0" text="Creează comandă">
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="34.0" right="28.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="982.0" prefWidth="1335.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1165.0" style="-fx-background-color: #fff;">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="24.0" prefWidth="330.0" style="-fx-background-color: #F2F4F7;">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../images/search.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="12.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField prefHeight="32.0" prefWidth="269.0" text="Cauta" />
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="16.0" left="27.0" right="16.0" top="16.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="9.0" left="16.0" right="9.0" top="9.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="893.0" style="-fx-border-radius: 20;">
+                     <children>
+                        <ImageView fx:id="employeeImage" fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../images/avatars/default.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="4.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Text fx:id="employeeName" strokeType="OUTSIDE" strokeWidth="0.0" text="Charles Xavier">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="employeeRole" layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casier">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" right="72.0" top="8.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <Text fill="#1f1f1f" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENȚI &gt; CREARE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="21.0" left="64.0" top="32.0" />
+               </VBox.margin>
+            </Text>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" maxWidth="500.0" prefHeight="200.0" prefWidth="304.0" style="-fx-background-color: #fff;">
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nume">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="30.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField id="email" fx:id="userName" />
+                        <Text layoutX="132.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField id="password" fx:id="userEmail" layoutX="40.0" layoutY="124.0" />
+                        <Text layoutX="40.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numar de telefon">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                        <TextField id="password" fx:id="userPhone" layoutX="40.0" layoutY="140.0" />
+                        <Button minHeight="44.0" mnemonicParsing="false" onAction="#save" prefHeight="44.0" prefWidth="449.0" style="-fx-background-color: #005EB8;" text="Continuă" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

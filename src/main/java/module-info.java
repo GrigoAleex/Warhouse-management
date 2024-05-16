@@ -7,10 +7,11 @@ module com.example.pt2024_30223_grigorescu_alexandru_assignment_2 {
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
-    opens com.example.pt2024_30223_grigorescu_alexandru_assignment_2 to javafx.fxml;
-    opens com.example.pt2024_30223_grigorescu_alexandru_assignment_2.frontend.controllers to javafx.fxml;
+    opens com.example.pt2024_30223_grigorescu_alexandru_assignment_3 to javafx.fxml;
+    opens com.example.pt2024_30223_grigorescu_alexandru_assignment_3.presentation.controllers to javafx.fxml;
 
-    exports com.example.pt2024_30223_grigorescu_alexandru_assignment_2.frontend.controllers;
-    exports com.example.pt2024_30223_grigorescu_alexandru_assignment_2;
+    exports com.example.pt2024_30223_grigorescu_alexandru_assignment_3.presentation.controllers;
+    exports com.example.pt2024_30223_grigorescu_alexandru_assignment_3;
 }
